@@ -1,0 +1,16 @@
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\PracticeQuery.csproj.AssemblyReference.cache
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\PracticeQuery.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\PracticeQuery.AssemblyInfoInputs.cache
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\PracticeQuery.AssemblyInfo.cs
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\PracticeQuery.csproj.CoreCompileInputs.cache
+D:\Visual Stdio\PracticeQuery\PracticeQuery\bin\Debug\net5.0\PracticeQuery.exe
+D:\Visual Stdio\PracticeQuery\PracticeQuery\bin\Debug\net5.0\PracticeQuery.deps.json
+D:\Visual Stdio\PracticeQuery\PracticeQuery\bin\Debug\net5.0\PracticeQuery.runtimeconfig.json
+D:\Visual Stdio\PracticeQuery\PracticeQuery\bin\Debug\net5.0\PracticeQuery.runtimeconfig.dev.json
+D:\Visual Stdio\PracticeQuery\PracticeQuery\bin\Debug\net5.0\PracticeQuery.dll
+D:\Visual Stdio\PracticeQuery\PracticeQuery\bin\Debug\net5.0\ref\PracticeQuery.dll
+D:\Visual Stdio\PracticeQuery\PracticeQuery\bin\Debug\net5.0\PracticeQuery.pdb
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\PracticeQuery.dll
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\ref\PracticeQuery.dll
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\PracticeQuery.pdb
+D:\Visual Stdio\PracticeQuery\PracticeQuery\obj\Debug\net5.0\PracticeQuery.genruntimeconfig.cache
