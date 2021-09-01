@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Stdio\\PracticeQuery\\PracticeQuery\\PracticeQuery.csproj": {}
+    "D:\\Visual Stdio\\Practicequery\\PracticeQuery\\PracticeQuery.csproj": {}
   },
   "projects": {
-    "D:\\Visual Stdio\\PracticeQuery\\PracticeQuery\\PracticeQuery.csproj": {
+    "D:\\Visual Stdio\\Practicequery\\PracticeQuery\\PracticeQuery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Stdio\\PracticeQuery\\PracticeQuery\\PracticeQuery.csproj",
+        "projectUniqueName": "D:\\Visual Stdio\\Practicequery\\PracticeQuery\\PracticeQuery.csproj",
         "projectName": "PracticeQuery",
-        "projectPath": "D:\\Visual Stdio\\PracticeQuery\\PracticeQuery\\PracticeQuery.csproj",
+        "projectPath": "D:\\Visual Stdio\\Practicequery\\PracticeQuery\\PracticeQuery.csproj",
         "packagesPath": "C:\\Users\\John\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Stdio\\PracticeQuery\\PracticeQuery\\obj\\",
+        "outputPath": "D:\\Visual Stdio\\Practicequery\\PracticeQuery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\John\\AppData\\Roaming\\NuGet\\NuGet.Config",
