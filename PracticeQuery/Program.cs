@@ -59,14 +59,14 @@ namespace Practicequery
             //    group num by num into num2 //group by can grap specific data in querry Ex. group data in data.name into newquerry
             //    select num2;
 
-            //foreach(var item in nQuery)
+            //foreach (var item in nQuery)
             //{
             //    Console.WriteLine("This " + item.Key + " apprear " + item.Count());
             //}
 
 
             //Q5
-            //Console.WriteLine("Input a string : ");
+            //Console.Write("Input a string : ");
             //string input = Console.ReadLine();
 
             //var nQuery =
@@ -100,9 +100,9 @@ namespace Practicequery
             //    select newnum;
 
             ////.Sum() 計算數值序列的總和
-            //foreach(var item in nQuery)
+            //foreach (var item in nQuery)
             //{
-            //    Console.WriteLine(item.Key + "\t" + item.Sum()+ "\t"+ item.Count());
+            //    Console.WriteLine(item.Key + "\t" + item.Sum() + "\t" + item.Count());
             //}
 
 
@@ -192,7 +192,7 @@ namespace Practicequery
             //string input = "THIS is A STRING";
             //var upperword = filter(input);
 
-            //foreach(var item in upperword)
+            //foreach (var item in upperword)
             //{
             //    Console.Write(item + " ");
             //}
@@ -241,9 +241,6 @@ namespace Practicequery
             //    .ForEach(x => Console.WriteLine(" Id : {0},  Name : {1},  achieved Grade Point : {2}", x.StuId,x.StuName, x.GrPoint));
 
             //Q15
-            //search file
-
-            //Q16
             //string[] arr1 = { "aaa.frx", "bbb.TXT", "xyz.dbf", "abc.pdf", "aaaa.PDF", "xyz.frt", "abc.xml", "ccc.txt", "zzz.txt" };
 
             //var data = arr1.Select(file => Path.GetExtension(file).TrimStart('.').ToLower())
@@ -257,6 +254,13 @@ namespace Practicequery
             //{
             //    Console.WriteLine("{0} File(s) with {1} Extension ", item.Count, item.Extension);
             //}
+
+            //Q16
+            string[] dirfile = Directory.GetFiles("D:\\Visual Studio");
+
+            var avgsize = dirfile.Select(file => new FileInfo(file).Length).Average();
+            avgsize = Math.Round(avgsize / 10 , 1);
+            Console.WriteLine("The Average file size is {0} MB", avgsize);
 
             //Q17
             //List<string> listOfString = new List<string>();
@@ -519,7 +523,7 @@ namespace Practicequery
             //{
             //    "ROME","LONDON","NAIROBI","CALIFORNIA","ZURICH","NEW DELHI","AMSTERDAM","ABU DHABI", "PARIS"
             //};
-            
+
             //Console.Write("Input a number that will group the array : ");
             //int size = Convert.ToInt32(Console.ReadLine());
 
@@ -541,11 +545,11 @@ namespace Practicequery
             //}
 
             //Q30
-            var itemlist = (from i in Item_Mast.GetItemMast() select i.ItemDes).Distinct().OrderBy(x => x);
-            foreach(var item in itemlist)
-            {
-                Console.WriteLine(item);
-            }
+            //var itemlist = (from i in Item_Mast.GetItemMast() select i.ItemDes).Distinct().OrderBy(x => x);
+            //foreach(var item in itemlist)
+            //{
+            //    Console.WriteLine(item);
+            //}
         }
     }
     //Q14
@@ -588,22 +592,22 @@ namespace Practicequery
     //}
 
     //Q30
-    class Item_Mast
-    {
-        public int ItemId { get; set; }
-        public string ItemDes { get; set; }
+    //class Item_Mast
+    //{
+    //    public int ItemId { get; set; }
+    //    public string ItemDes { get; set; }
 
-        public static List<Item_Mast> GetItemMast()
-        {
-            List<Item_Mast> itemlist = new List<Item_Mast>();
-            itemlist.Add(new Item_Mast() { ItemId = 1, ItemDes = "Biscuit  " });
-            itemlist.Add(new Item_Mast() { ItemId = 2, ItemDes = "Honey    " });
-            itemlist.Add(new Item_Mast() { ItemId = 3, ItemDes = "Butter   " });
-            itemlist.Add(new Item_Mast() { ItemId = 4, ItemDes = "Brade    " });
-            itemlist.Add(new Item_Mast() { ItemId = 5, ItemDes = "Honey    " });
-            itemlist.Add(new Item_Mast() { ItemId = 6, ItemDes = "Biscuit  " });
-            return itemlist;
-        }
-    }
+    //    public static List<Item_Mast> GetItemMast()
+    //    {
+    //        List<Item_Mast> itemlist = new List<Item_Mast>();
+    //        itemlist.Add(new Item_Mast() { ItemId = 1, ItemDes = "Biscuit  " });
+    //        itemlist.Add(new Item_Mast() { ItemId = 2, ItemDes = "Honey    " });
+    //        itemlist.Add(new Item_Mast() { ItemId = 3, ItemDes = "Butter   " });
+    //        itemlist.Add(new Item_Mast() { ItemId = 4, ItemDes = "Brade    " });
+    //        itemlist.Add(new Item_Mast() { ItemId = 5, ItemDes = "Honey    " });
+    //        itemlist.Add(new Item_Mast() { ItemId = 6, ItemDes = "Biscuit  " });
+    //        return itemlist;
+    //    }
+    //}
 }
 
