@@ -256,11 +256,11 @@ namespace Practicequery
             //}
 
             //Q16
-            string[] dirfile = Directory.GetFiles("D:\\Visual Studio");
+            //string[] dirfile = Directory.GetFiles("PATH");
 
-            var avgsize = dirfile.Select(file => new FileInfo(file).Length).Average();
-            avgsize = Math.Round(avgsize / 10 , 1);
-            Console.WriteLine("The Average file size is {0} MB", avgsize);
+            //var avgsize = dirfile.Select(file => new FileInfo(file).Length).Average();
+            //avgsize = Math.Round(avgsize / 10 , 1);
+            //Console.WriteLine("The Average file size is {0} MB", avgsize);
 
             //Q17
             //List<string> listOfString = new List<string>();
@@ -529,13 +529,13 @@ namespace Practicequery
 
             //var split =
             //    from i in Enumerable.Range(0, cities.Length)
-            //    group cities[i]  by i / size;
+            //    group cities[i] by i / size;
 
 
-            //foreach(var item in split)
+            //foreach (var item in split)
             //{
             //    cityView(string.Join(";  ", item.ToArray()));
-            //    //Console.WriteLine(item);
+            //    //Console.WriteLine(item.ToArray());
             //}
 
             //static void cityView(string cityMetro)
@@ -545,11 +545,11 @@ namespace Practicequery
             //}
 
             //Q30
-            //var itemlist = (from i in Item_Mast.GetItemMast() select i.ItemDes).Distinct().OrderBy(x => x);
-            //foreach(var item in itemlist)
-            //{
-            //    Console.WriteLine(item);
-            //}
+            var itemlist = (from i in Item_Mast.GetItemMast() select i.ItemDes).Distinct().OrderBy(x => x);
+            foreach (var item in itemlist)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
     //Q14
@@ -592,22 +592,22 @@ namespace Practicequery
     //}
 
     //Q30
-    //class Item_Mast
-    //{
-    //    public int ItemId { get; set; }
-    //    public string ItemDes { get; set; }
+    class Item_Mast
+    {
+        public int ItemId { get; set; }
+        public string ItemDes { get; set; }
 
-    //    public static List<Item_Mast> GetItemMast()
-    //    {
-    //        List<Item_Mast> itemlist = new List<Item_Mast>();
-    //        itemlist.Add(new Item_Mast() { ItemId = 1, ItemDes = "Biscuit  " });
-    //        itemlist.Add(new Item_Mast() { ItemId = 2, ItemDes = "Honey    " });
-    //        itemlist.Add(new Item_Mast() { ItemId = 3, ItemDes = "Butter   " });
-    //        itemlist.Add(new Item_Mast() { ItemId = 4, ItemDes = "Brade    " });
-    //        itemlist.Add(new Item_Mast() { ItemId = 5, ItemDes = "Honey    " });
-    //        itemlist.Add(new Item_Mast() { ItemId = 6, ItemDes = "Biscuit  " });
-    //        return itemlist;
-    //    }
-    //}
+        public static List<Item_Mast> GetItemMast()
+        {
+            List<Item_Mast> itemlist = new List<Item_Mast>();
+            itemlist.Add(new Item_Mast() { ItemId = 1, ItemDes = "Biscuit  " });
+            itemlist.Add(new Item_Mast() { ItemId = 2, ItemDes = "Honey    " });
+            itemlist.Add(new Item_Mast() { ItemId = 3, ItemDes = "Butter   " });
+            itemlist.Add(new Item_Mast() { ItemId = 4, ItemDes = "Brade    " });
+            itemlist.Add(new Item_Mast() { ItemId = 5, ItemDes = "Honey    " });
+            itemlist.Add(new Item_Mast() { ItemId = 6, ItemDes = "Biscuit  " });
+            return itemlist;
+        }
+    }
 }
 
